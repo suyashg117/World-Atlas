@@ -9,14 +9,14 @@ export const HeroSection = () => {
           </h1>
           <p className="paragraph">
             Discover the history, culture, and beauty of every nation. Sort,
-            search, and filter through countries to find the details you need
+            search, and filter through countries to find the details you need.
           </p>
           <button className="btn btn-darken btn-inline bg-white-box">
             Start Exploring <FaArrowRight />
           </button>
           <div className="hero-image">
             <img
-              src="/world4.png"
+              src="/worlds.png"
               alt="world is beauty"
               className="banner-image"
             />

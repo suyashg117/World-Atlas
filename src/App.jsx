@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { AppLayout } from "./Components/Layout/AppLayout";
 import { CountryDetails } from "./Components/Layout/CountryDetails";
@@ -7,7 +7,9 @@ import { Contact } from "./pages/Contact";
 import { Country } from "./pages/Country";
 import { ErrorPage } from "./pages/errorPage";
 import { Home } from "./pages/Home";
-const router = createBrowserRouter([
+
+const router = createHashRouter([
+  // 👈 use HashRouter instead of BrowserRouter
   {
     path: "/",
     element: <AppLayout />,
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router}></RouterProvider>;
+  return <RouterProvider router={router} />;
 };
+
 export default App;
