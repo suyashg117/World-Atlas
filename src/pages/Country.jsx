@@ -1,8 +1,8 @@
 import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/postApi";
 import { CountryCard } from "../Components/Layout/CountryCard";
-import { Loader } from "../components/UI/Loader";
-import { SearchFilter } from "../components/UI/SearchFilter";
+import { Loader } from "../Components/UI/Loader";
+import { SearchFilter } from "../Components/UI/SearchFilter";
 export const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
