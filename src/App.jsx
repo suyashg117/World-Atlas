@@ -5,7 +5,7 @@ import { CountryDetails } from "./Components/Layout/CountryDetails";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Country } from "./pages/Country";
-import { ErrorPage } from "./pages/errorPage";
+import { ErrorPage } from "./pages/ErrorPage";
 import { Home } from "./pages/Home";
 
 const router = createHashRouter([
